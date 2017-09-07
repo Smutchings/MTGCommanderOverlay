@@ -1,0 +1,103 @@
+body {
+  background-color: rgba(0,0,0,0);
+  width: 1920px;
+  height: 1080px;
+  margin: 0px;
+}
+
+#top-left-nameplate {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  z-index: 2;
+}
+
+#top-right-nameplate {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  z-index: 2;
+}
+
+#bottom-left-nameplate {
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  z-index: 2;
+}
+
+#bottom-right-nameplate {
+  position: absolute;
+  bottom: 10px;
+  right: 0px;
+  z-index: 2;
+}
+
+p {
+  margin: 0px;
+}
+
+.player-name-left {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  text-align: left;
+  font-family: 'Bree Serif', serif;
+  font-size: 70px;
+  color: #ffffff;
+}
+
+.player-name-right {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  text-align: right;
+  font-family: 'Bree Serif', serif;
+  font-size: 70px;
+  color: #ffffff;
+}
+
+.life-left {
+  position: absolute;
+  width: 180px;
+  top: 5px;
+  right: 20px;
+  text-align: center;
+  font-family: 'Overpass Mono', monospace;
+  font-size: 90px;
+  color: #ffffff;
+}
+
+.life-right {
+  position: absolute;
+  width: 180px;
+  top: 5px;
+  left: 20px;
+  text-align: center;
+  font-family: 'Overpass Mono', monospace;
+  font-size: 90px;
+  color: #ffffff;
+  z-index: 999;
+}
+
+.commander-left {
+  position: absolute;
+  top: 92px;
+  left: 20px;
+  text-align: left;
+  font-family: 'Hind', sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  letter-spacing: -0.15px;
+}
+
+.commander-right {
+  position: absolute;
+  top: 92px;
+  right: 20px;
+  text-align: right;
+  font-family: 'Hind', sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  letter-spacing: -0.15px;
+}
