@@ -101,3 +101,9 @@ p {
   color: #ffffff;
   letter-spacing: -0.15px;
 }
+
+#footer-logo {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
