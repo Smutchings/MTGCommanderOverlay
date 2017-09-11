@@ -60,7 +60,6 @@ p {
 .life-left {
   position: absolute;
   width: 180px;
-  height: 140px;
   top: 25px;
   right: 20px;
   text-align: center;
@@ -72,7 +71,6 @@ p {
 .life-right {
   position: absolute;
   width: 180px;
-  height: 140px;
   top: 25px;
   left: 20px;
   text-align: center;
