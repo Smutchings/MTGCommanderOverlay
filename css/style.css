@@ -61,10 +61,9 @@ p {
   position: absolute;
   width: 180px;
   height: 140px;
-  top: 5px;
+  top: 20px;
   right: 20px;
   text-align: center;
-  vertical-align: middle;
   font-family: 'Overpass Mono', monospace;
   font-size: 90px;
   color: #ffffff;
@@ -74,10 +73,9 @@ p {
   position: absolute;
   width: 180px;
   height: 140px;
-  top: 5px;
+  top: 20px;
   left: 20px;
   text-align: center;
-  vertical-align: middle;
   font-family: 'Overpass Mono', monospace;
   font-size: 90px;
   color: #ffffff;
