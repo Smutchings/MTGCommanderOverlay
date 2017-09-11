@@ -76,6 +76,7 @@ p {
   top: 5px;
   left: 20px;
   text-align: center;
+  vertical-align: middle;
   font-family: 'Overpass Mono', monospace;
   font-size: 90px;
   color: #ffffff;
@@ -87,6 +88,7 @@ p {
   top: 92px;
   left: 20px;
   text-align: left;
+  vertical-align: middle;
   font-family: 'Hind', sans-serif;
   font-size: 18px;
   color: #ffffff;
