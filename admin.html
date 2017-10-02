@@ -7,6 +7,16 @@
   <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
 
   <script>
+
+    // Initial Player Life Variables
+
+    var player1Life = 40;
+    var player2Life = 40;
+    var player3Life = 40;
+    var player4Life = 40;
+
+    // Firebase Setup
+
     var config = {
       apiKey: "AIzaSyAwvq7yjYru6jOhGzKWtyFCVUGyG3xr5Aw",
       authDomain: "elitegamingoverlay.firebaseapp.com",
@@ -16,22 +26,18 @@
     };
     firebase.initializeApp(config);
 
+    // Database Setup
+
     var database = firebase.database();
 
-    var player1LifeTotal = 40;
-    var player2LifeTotal = 40;
-    var player3LifeTotal = 40;
-    var player4LifeTotal = 40;
-
     //Player 1
-
-    firebase.database().ref('/players/0/commander/').on('value', function(snapshot) {
-      document.querySelectorAll('#player1Commander')[0].innerHTML = snapshot.val()
-    });
+    // firebase.database().ref('/players/0/commander/').on('value', function(snapshot) {
+    //   document.querySelectorAll('#player1Commander')[0].innerHTML = snapshot.val()
+    // });
 
     firebase.database().ref('/players/0/life/').on('value', function(snapshot) {
       document.querySelectorAll('#player1Life')[0].innerHTML = snapshot.val()
-      player1LifeTotal = snapshot.val()
+      player1Life = snapshot.val()
     });
 
     firebase.database().ref('/players/0/name/').on('value', function(snapshot) {
@@ -39,13 +45,13 @@
     });
 
     //Player 2
-    firebase.database().ref('/players/1/commander/').on('value', function(snapshot) {
-      document.querySelectorAll('#player2Commander')[0].innerHTML = snapshot.val()
-    });
+    // firebase.database().ref('/players/1/commander/').on('value', function(snapshot) {
+    //   document.querySelectorAll('#player2Commander')[0].innerHTML = snapshot.val()
+    // });
 
     firebase.database().ref('/players/1/life/').on('value', function(snapshot) {
       document.querySelectorAll('#player2Life')[0].innerHTML = snapshot.val()
-      player3LifeTotal = snapshot.val()
+      player2Life = snapshot.val()
     });
 
     firebase.database().ref('/players/1/name/').on('value', function(snapshot) {
@@ -54,14 +60,13 @@
 
 
     //Player 3
-
-    firebase.database().ref('/players/2/commander/').on('value', function(snapshot) {
-      document.querySelectorAll('#player3Commander')[0].innerHTML = snapshot.val()
-    });
+    // firebase.database().ref('/players/2/commander/').on('value', function(snapshot) {
+    //   document.querySelectorAll('#player3Commander')[0].innerHTML = snapshot.val()
+    // });
 
     firebase.database().ref('/players/2/life/').on('value', function(snapshot) {
       document.querySelectorAll('#player3Life')[0].innerHTML = snapshot.val()
-      player3LifeTotal = snapshot.val()
+      player3Life = snapshot.val()
     });
 
     firebase.database().ref('/players/2/name/').on('value', function(snapshot) {
@@ -69,19 +74,25 @@
     });
 
     //Player 4
-
-    firebase.database().ref('/players/3/commander/').on('value', function(snapshot) {
-      document.querySelectorAll('#player4Commander')[0].innerHTML = snapshot.val()
-    });
+    // firebase.database().ref('/players/3/commander/').on('value', function(snapshot) {
+    //   document.querySelectorAll('#player4Commander')[0].innerHTML = snapshot.val()
+    // });
 
     firebase.database().ref('/players/3/life/').on('value', function(snapshot) {
       document.querySelectorAll('#player4Life')[0].innerHTML = snapshot.val()
-      player4LifeTotal = snapshot.val()
+      player4Life = snapshot.val()
     });
 
     firebase.database().ref('/players/3/name/').on('value', function(snapshot) {
       document.querySelectorAll('#player4Name')[0].innerHTML = snapshot.val()
     });
+
+    // Button Controls
+
+    document.querySelector('.button').addEventListener('click', function() {
+      player1Life -= 5;
+      console.log(player1Life);
+} );
 
     </script>
 
