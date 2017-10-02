@@ -1,0 +1,140 @@
+<html>
+<head>
+  <title>MTG Commander Overlay - Admin</title>
+  <link rel="stylesheet" type="text/css" href="css/admin.css">
+  <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Hind|Overpass+Mono" rel="stylesheet">
+
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+
+  <script>
+    var config = {
+      apiKey: "AIzaSyAwvq7yjYru6jOhGzKWtyFCVUGyG3xr5Aw",
+      authDomain: "elitegamingoverlay.firebaseapp.com",
+      databaseURL: "https://elitegamingoverlay.firebaseio.com",
+      storageBucket: "",
+      messagingSenderId: "568794903529"
+    };
+    firebase.initializeApp(config);
+
+    var database = firebase.database();
+
+    var player1LifeTotal = 40;
+    var player2LifeTotal = 40;
+    var player3LifeTotal = 40;
+    var player4LifeTotal = 40;
+
+    //Player 1
+
+    firebase.database().ref('/players/0/commander/').on('value', function(snapshot) {
+      document.querySelectorAll('#player1Commander')[0].innerHTML = snapshot.val()
+    });
+
+    firebase.database().ref('/players/0/life/').on('value', function(snapshot) {
+      document.querySelectorAll('#player1Life')[0].innerHTML = snapshot.val()
+      player1LifeTotal = snapshot.val()
+    });
+
+    firebase.database().ref('/players/0/name/').on('value', function(snapshot) {
+      document.querySelectorAll('#player1Name')[0].innerHTML = snapshot.val()
+    });
+
+    //Player 2
+    firebase.database().ref('/players/1/commander/').on('value', function(snapshot) {
+      document.querySelectorAll('#player2Commander')[0].innerHTML = snapshot.val()
+    });
+
+    firebase.database().ref('/players/1/life/').on('value', function(snapshot) {
+      document.querySelectorAll('#player2Life')[0].innerHTML = snapshot.val()
+      player3LifeTotal = snapshot.val()
+    });
+
+    firebase.database().ref('/players/1/name/').on('value', function(snapshot) {
+      document.querySelectorAll('#player2Name')[0].innerHTML = snapshot.val()
+    });
+
+
+    //Player 3
+
+    firebase.database().ref('/players/2/commander/').on('value', function(snapshot) {
+      document.querySelectorAll('#player3Commander')[0].innerHTML = snapshot.val()
+    });
+
+    firebase.database().ref('/players/2/life/').on('value', function(snapshot) {
+      document.querySelectorAll('#player3Life')[0].innerHTML = snapshot.val()
+      player3LifeTotal = snapshot.val()
+    });
+
+    firebase.database().ref('/players/2/name/').on('value', function(snapshot) {
+      document.querySelectorAll('#player3Name')[0].innerHTML = snapshot.val()
+    });
+
+    //Player 4
+
+    firebase.database().ref('/players/3/commander/').on('value', function(snapshot) {
+      document.querySelectorAll('#player4Commander')[0].innerHTML = snapshot.val()
+    });
+
+    firebase.database().ref('/players/3/life/').on('value', function(snapshot) {
+      document.querySelectorAll('#player4Life')[0].innerHTML = snapshot.val()
+      player4LifeTotal = snapshot.val()
+    });
+
+    firebase.database().ref('/players/3/name/').on('value', function(snapshot) {
+      document.querySelectorAll('#player4Name')[0].innerHTML = snapshot.val()
+    });
+
+    </script>
+
+</head>
+<body>
+
+  <div id="player1">
+    <h2 id="player1Name">Player 1</h2>
+    <!-- <h3 id="player1Commander">Commander 1</h3> -->
+    <p class="lifeTotal" id="player1Life">40</p>
+    <p>Adjust life total:</p>
+    <button id="player1minus5" class="button red-button">-5</button>
+    <button id="player1minus1" class="button red-button">-1</button>
+    <button id="player1reset" class="button yellow-button">40</button>
+    <button id="player1plus1" class="button green-button">+1</button>
+    <button id="player1plus5" class="button green-button">+5</button>
+  </div>
+
+  <div id="player2">
+    <h2 id="player2Name">Player 2</h2>
+    <!-- <h3 id="player2Commander">Commander 2</h3> -->
+    <p class="lifeTotal" id="player2Life">40</p>
+    <p>Adjust life total:</p>
+    <button id="player2minus5" class="button red-button">-5</button>
+    <button id="player2minus1" class="button red-button">-1</button>
+    <button id="player2reset" class="button yellow-button">40</button>
+    <button id="player2plus1" class="button green-button">+1</button>
+    <button id="player2plus5" class="button green-button">+5</button>
+  </div>
+
+  <div id="player3">
+    <h2 id="player3Name">Player 3</h2>
+    <!-- <h3 id="player3Commander">Commander 3</h3> -->
+    <p class="lifeTotal" id="player3Life">40</p>
+    <p>Adjust life total:</p>
+    <button id="player3minus5" class="button red-button">-5</button>
+    <button id="player3minus1" class="button red-button">-1</button>
+    <button id="player3reset" class="button yellow-button">40</button>
+    <button id="player3plus1" class="button green-button">+1</button>
+    <button id="player3plus5" class="button green-button">+5</button>
+  </div>
+
+  <div id="player4">
+    <h2 id="player4Name">Player 4</h2>
+    <!-- <h3 id="player4Commander">Commander 4</h3> -->
+    <p class="lifeTotal" id="player4Life">40</p>
+    <p>Adjust life total:</p>
+    <button id="player4minus5" class="button red-button">-5</button>
+    <button id="player4minus1" class="button red-button">-1</button>
+    <button id="player4reset" class="button yellow-button">40</button>
+    <button id="player4plus1" class="button green-button">+1</button>
+    <button id="player4plus5" class="button green-button">+5</button>
+  </div>
+
+</body>
+</html>
