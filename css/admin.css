@@ -2,6 +2,7 @@
 
 body {
   width: 800px;
+  background-color: black;
 }
 
 h1 {
@@ -66,3 +67,19 @@ h2 {
 }
 
 .green-button:hover {background-color: #3e8e41}
+
+#player1 {
+  color: red;
+}
+
+#player2 {
+  color: green;
+}
+
+#player3 {
+  color: blue;
+}
+
+#player4 {
+  color: yellow;
+}
