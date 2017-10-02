@@ -1,9 +1,13 @@
+/* Main CSS */
+
 body {
   background-color: rgba(0,0,0,0);
   width: 1920px;
   height: 1080px;
   margin: 0px;
 }
+
+/* Stream Overlay CSS */
 
 #top-left-nameplate {
   position: absolute;
@@ -31,10 +35,6 @@ body {
   bottom: 10px;
   right: 0px;
   z-index: 2;
-}
-
-p {
-  margin: 0px;
 }
 
 .player-name-left {

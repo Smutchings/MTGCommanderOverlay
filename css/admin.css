@@ -1,0 +1,64 @@
+/* Admin Page CSS */
+
+h1 {
+  text-align: center;
+  font-family: 'Bree Serif', serif;
+}
+
+h2 {
+  font-family: 'Bree Serif', serif;
+  font-size: 20px;
+  width: 75%;
+  float: left;
+}
+
+.lifeTotal {
+  position: relative;
+  text-align: right;
+  font-size: 20px;
+  font-family: 'Overpass Mono', monospace;
+  width: 25%;
+  float: right;
+}
+
+.button {
+  display: inline-block;
+  width: 65px;
+  padding: 10px 10px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.red-button {
+  background-color: #ff0000;
+}
+
+.red-button:hover {background-color: #D0021B}
+
+.yellow-button {
+  background-color: #F5E023;
+}
+
+.yellow-button:hover {background-color: #F5A623}
+
+.green-button {
+  background-color: #00ff00;
+}
+
+.green-button:hover {background-color: #3e8e41}
