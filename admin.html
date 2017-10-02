@@ -87,13 +87,6 @@
       document.querySelectorAll('#player4Name')[0].innerHTML = snapshot.val()
     });
 
-    // Button Controls
-
-    document.querySelector('.button').addEventListener('click', function() {
-      player1Life -= 5;
-      console.log(player1Life);
-} );
-
     </script>
 
 </head>
@@ -104,11 +97,11 @@
     <!-- <h3 id="player1Commander">Commander 1</h3> -->
     <p class="lifeTotal" id="player1Life">40</p>
     <p>Adjust life total:</p>
-    <button id="player1minus5" class="button red-button">-5</button>
-    <button id="player1minus1" class="button red-button">-1</button>
-    <button id="player1reset" class="button yellow-button">40</button>
-    <button id="player1plus1" class="button green-button">+1</button>
-    <button id="player1plus5" class="button green-button">+5</button>
+    <button id="player1minus5" class="button red-button" onclick="player1Life-=5">-5</button>
+    <button id="player1minus1" class="button red-button" onclick="player1Life-=5">-1</button>
+    <button id="player1reset" class="button yellow-button" onclick="player1Life=40">40</button>
+    <button id="player1plus1" class="button green-button" onclick="player1Life+=1">+1</button>
+    <button id="player1plus5" class="button green-button" onclick="player1Life+=5">+5</button>
   </div>
 
   <div id="player2">
@@ -116,11 +109,11 @@
     <!-- <h3 id="player2Commander">Commander 2</h3> -->
     <p class="lifeTotal" id="player2Life">40</p>
     <p>Adjust life total:</p>
-    <button id="player2minus5" class="button red-button">-5</button>
-    <button id="player2minus1" class="button red-button">-1</button>
-    <button id="player2reset" class="button yellow-button">40</button>
-    <button id="player2plus1" class="button green-button">+1</button>
-    <button id="player2plus5" class="button green-button">+5</button>
+    <button id="player2minus5" class="button red-button" onclick="player2Life-=5">-5</button>
+    <button id="player2minus1" class="button red-button" onclick="player2Life-=1">-1</button>
+    <button id="player2reset" class="button yellow-button" onclick="player2Life=40">40</button>
+    <button id="player2plus1" class="button green-button" onclick="player2Life+=1">+1</button>
+    <button id="player2plus5" class="button green-button" onclick="player2Life+=5">+5</button>
   </div>
 
   <div id="player3">
@@ -128,11 +121,11 @@
     <!-- <h3 id="player3Commander">Commander 3</h3> -->
     <p class="lifeTotal" id="player3Life">40</p>
     <p>Adjust life total:</p>
-    <button id="player3minus5" class="button red-button">-5</button>
-    <button id="player3minus1" class="button red-button">-1</button>
-    <button id="player3reset" class="button yellow-button">40</button>
-    <button id="player3plus1" class="button green-button">+1</button>
-    <button id="player3plus5" class="button green-button">+5</button>
+    <button id="player3minus5" class="button red-button" onclick="player3Life-=5">-5</button>
+    <button id="player3minus1" class="button red-button" onclick="player3Life-=1">-1</button>
+    <button id="player3reset" class="button yellow-button" onclick="player3Life=40">40</button>
+    <button id="player3plus1" class="button green-button" onclick="player3Life+=1">+1</button>
+    <button id="player3plus5" class="button green-button" onclick="player3Life+=5">+5</button>
   </div>
 
   <div id="player4">
@@ -140,11 +133,11 @@
     <!-- <h3 id="player4Commander">Commander 4</h3> -->
     <p class="lifeTotal" id="player4Life">40</p>
     <p>Adjust life total:</p>
-    <button id="player4minus5" class="button red-button">-5</button>
-    <button id="player4minus1" class="button red-button">-1</button>
-    <button id="player4reset" class="button yellow-button">40</button>
-    <button id="player4plus1" class="button green-button">+1</button>
-    <button id="player4plus5" class="button green-button">+5</button>
+    <button id="player4minus5" class="button red-button" onclick="player4Life-=5">-5</button>
+    <button id="player4minus1" class="button red-button" onclick="player4Life-=1">-1</button>
+    <button id="player4reset" class="button yellow-button" onclick="player4Life=40">40</button>
+    <button id="player4plus1" class="button green-button" onclick="player4Life+=1">+1</button>
+    <button id="player4plus5" class="button green-button" onclick="player4Life+=5">+5</button>
   </div>
 
 </body>
