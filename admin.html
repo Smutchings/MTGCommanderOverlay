@@ -99,52 +99,68 @@
 </head>
 <body>
 
-  <div id="player1">
-    <h2 id="player1Name">Player 1</h2>
-    <!-- <h3 id="player1Commander">Commander 1</h3> -->
-    <p class="lifeTotal" id="player1Life">40</p>
-    <p>&nbsp;</p>
-    <button id="player1minus5" class="button red-button" onclick="player1Life-=5; firebase.database().ref('/players/0/').update({life : player1Life});">-5</button>
-    <button id="player1minus1" class="button red-button" onclick="player1Life-=1; firebase.database().ref('/players/0/').update({life : player1Life});">-1</button>
-    <button id="player1reset" class="button yellow-button" onclick="player1Life=40; firebase.database().ref('/players/0/').update({life : player1Life});">40</button>
-    <button id="player1plus1" class="button green-button" onclick="player1Life+=1; firebase.database().ref('/players/0/').update({life : player1Life});">+1</button>
-    <button id="player1plus5" class="button green-button" onclick="player1Life+=5; firebase.database().ref('/players/0/').update({life : player1Life});">+5</button>
-  </div>
+  <div id="content">
 
-  <div id="player2">
-    <h2 id="player2Name">Player 2</h2>
-    <!-- <h3 id="player2Commander">Commander 2</h3> -->
-    <p class="lifeTotal" id="player2Life">40</p>
-    <p>&nbsp;</p>
-    <button id="player2minus5" class="button red-button" onclick="player2Life-=5; firebase.database().ref('/players/1/').update({life : player2Life});">-5</button>
-    <button id="player2minus1" class="button red-button" onclick="player2Life-=1; firebase.database().ref('/players/1/').update({life : player2Life});">-1</button>
-    <button id="player2reset" class="button yellow-button" onclick="player2Life=40; firebase.database().ref('/players/1/').update({life : player2Life});">40</button>
-    <button id="player2plus1" class="button green-button" onclick="player2Life+=1; firebase.database().ref('/players/1/').update({life : player2Life});">+1</button>
-    <button id="player2plus5" class="button green-button" onclick="player2Life+=5; firebase.database().ref('/players/1/').update({life : player2Life});">+5</button>
-  </div>
+    <div id="player1">
+      <div class="infoRow">
+        <h2 id="player1Name">Player 1</h2>
+        <!-- <h3 id="player1Commander">Commander 1</h3> -->
+        <p class="lifeTotal" id="player1Life">40</p>
+      </div>
+      <div class="buttonRow">
+        <button id="player1minus5" class="button red-button" onclick="player1Life-=5; firebase.database().ref('/players/0/').update({life : player1Life});">-5</button>
+        <button id="player1minus1" class="button red-button" onclick="player1Life-=1; firebase.database().ref('/players/0/').update({life : player1Life});">-1</button>
+        <button id="player1reset" class="button yellow-button" onclick="player1Life=40; firebase.database().ref('/players/0/').update({life : player1Life});">40</button>
+        <button id="player1plus1" class="button green-button" onclick="player1Life+=1; firebase.database().ref('/players/0/').update({life : player1Life});">+1</button>
+        <button id="player1plus5" class="button green-button" onclick="player1Life+=5; firebase.database().ref('/players/0/').update({life : player1Life});">+5</button>
+      </div>
+    </div>
 
-  <div id="player3">
-    <h2 id="player3Name">Player 3</h2>
-    <!-- <h3 id="player3Commander">Commander 3</h3> -->
-    <p class="lifeTotal" id="player3Life">40</p>
-    <p>&nbsp;</p>
-    <button id="player3minus5" class="button red-button" onclick="player3Life-=5; firebase.database().ref('/players/2/').update({life : player3Life});">-5</button>
-    <button id="player3minus1" class="button red-button" onclick="player3Life-=1; firebase.database().ref('/players/2/').update({life : player3Life});">-1</button>
-    <button id="player3reset" class="button yellow-button" onclick="player3Life=40; firebase.database().ref('/players/2/').update({life : player3Life});">40</button>
-    <button id="player3plus1" class="button green-button" onclick="player3Life+=1; firebase.database().ref('/players/2/').update({life : player3Life});">+1</button>
-    <button id="player3plus5" class="button green-button" onclick="player3Life+=5; firebase.database().ref('/players/2/').update({life : player3Life});">+5</button>
-  </div>
+    <div id="player2">
+      <div class="infoRow">
+        <h2 id="player2Name">Player 2</h2>
+        <!-- <h3 id="player2Commander">Commander 2</h3> -->
+        <p class="lifeTotal" id="player2Life">40</p>
+      </div>
+      <div class="buttonRow">
+        <button id="player2minus5" class="button red-button" onclick="player2Life-=5; firebase.database().ref('/players/1/').update({life : player2Life});">-5</button>
+        <button id="player2minus1" class="button red-button" onclick="player2Life-=1; firebase.database().ref('/players/1/').update({life : player2Life});">-1</button>
+        <button id="player2reset" class="button yellow-button" onclick="player2Life=40; firebase.database().ref('/players/1/').update({life : player2Life});">40</button>
+        <button id="player2plus1" class="button green-button" onclick="player2Life+=1; firebase.database().ref('/players/1/').update({life : player2Life});">+1</button>
+        <button id="player2plus5" class="button green-button" onclick="player2Life+=5; firebase.database().ref('/players/1/').update({life : player2Life});">+5</button>
+      </div>
+    </div>
 
-  <div id="player4">
-    <h2 id="player4Name">Player 4</h2>
-    <!-- <h3 id="player4Commander">Commander 4</h3> -->
-    <p class="lifeTotal" id="player4Life">40</p>
-    <p>&nbsp;</p>
-    <button id="player4minus5" class="button red-button" onclick="player4Life-=5; firebase.database().ref('/players/3/').update({life : player4Life});">-5</button>
-    <button id="player4minus1" class="button red-button" onclick="player4Life-=1; firebase.database().ref('/players/3/').update({life : player4Life});">-1</button>
-    <button id="player4reset" class="button yellow-button" onclick="player4Life=40; firebase.database().ref('/players/3/').update({life : player4Life});">40</button>
-    <button id="player4plus1" class="button green-button" onclick="player4Life+=1; firebase.database().ref('/players/3/').update({life : player4Life});">+1</button>
-    <button id="player4plus5" class="button green-button" onclick="player4Life+=5; firebase.database().ref('/players/3/').update({life : player4Life});">+5</button>
+    <div id="player3">
+      <div class="infoRow">
+        <h2 id="player3Name">Player 3</h2>
+        <!-- <h3 id="player3Commander">Commander 3</h3> -->
+        <span class="lifeTotal" id="player3Life">40</span>
+      </div>
+      <div class="buttonRow">
+        <button id="player3minus5" class="button red-button" onclick="player3Life-=5; firebase.database().ref('/players/2/').update({life : player3Life});">-5</button>
+        <button id="player3minus1" class="button red-button" onclick="player3Life-=1; firebase.database().ref('/players/2/').update({life : player3Life});">-1</button>
+        <button id="player3reset" class="button yellow-button" onclick="player3Life=40; firebase.database().ref('/players/2/').update({life : player3Life});">40</button>
+        <button id="player3plus1" class="button green-button" onclick="player3Life+=1; firebase.database().ref('/players/2/').update({life : player3Life});">+1</button>
+        <button id="player3plus5" class="button green-button" onclick="player3Life+=5; firebase.database().ref('/players/2/').update({life : player3Life});">+5</button>
+      </div>
+    </div>
+
+    <div id="player4">
+      <div class="infoRow">
+        <h2 id="player4Name">Player 4</h2>
+        <!-- <h3 id="player4Commander">Commander 4</h3> -->
+        <p class="lifeTotal" id="player4Life">40</p>
+      </div>
+      <div class="buttonRow">
+        <button id="player4minus5" class="button red-button" onclick="player4Life-=5; firebase.database().ref('/players/3/').update({life : player4Life});">-5</button>
+        <button id="player4minus1" class="button red-button" onclick="player4Life-=1; firebase.database().ref('/players/3/').update({life : player4Life});">-1</button>
+        <button id="player4reset" class="button yellow-button" onclick="player4Life=40; firebase.database().ref('/players/3/').update({life : player4Life});">40</button>
+        <button id="player4plus1" class="button green-button" onclick="player4Life+=1; firebase.database().ref('/players/3/').update({life : player4Life});">+1</button>
+        <button id="player4plus5" class="button green-button" onclick="player4Life+=5; firebase.database().ref('/players/3/').update({life : player4Life});">+5</button>
+      </div>
+    </div>
+
   </div>
 
 </body>
