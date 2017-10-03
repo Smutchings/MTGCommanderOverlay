@@ -12,15 +12,17 @@ h2 {
   display: inline;
 }
 
+a {
+  color: #ffffff;
+}
+
 .lifeTotal {
-  text-align: right;
   font-size: 40px;
+  text-align: center;
   font-family: 'Overpass Mono', monospace;
   color: #ffffff;
-  display: inline;
-  right: 20px;
-  background-color: black;
-  border-radius: 100%;
+  display: inline-block;
+  float: right;
 }
 
 .buttonRow {

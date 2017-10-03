@@ -106,7 +106,7 @@
       <div class="infoRow">
         <h2 id="player1Name">Player 1</h2>
         <!-- <h3 id="player1Commander">Commander 1</h3> -->
-        <p class="lifeTotal" id="player1Life">40</p>
+        <span class="lifeTotal" id="player1Life">40</span>
       </div>
       <div class="buttonRow">
         <button id="player1minus5" class="button red-button" onclick="player1Life-=5; firebase.database().ref('/players/0/').update({life : player1Life});">-5</button>
@@ -121,7 +121,7 @@
       <div class="infoRow">
         <h2 id="player2Name">Player 2</h2>
         <!-- <h3 id="player2Commander">Commander 2</h3> -->
-        <p class="lifeTotal" id="player2Life">40</p>
+        <span class="lifeTotal" id="player2Life">40</span>
       </div>
       <div class="buttonRow">
         <button id="player2minus5" class="button red-button" onclick="player2Life-=5; firebase.database().ref('/players/1/').update({life : player2Life});">-5</button>
@@ -151,7 +151,7 @@
       <div class="infoRow">
         <h2 id="player4Name">Player 4</h2>
         <!-- <h3 id="player4Commander">Commander 4</h3> -->
-        <p class="lifeTotal" id="player4Life">40</p>
+        <span class="lifeTotal" id="player4Life">40</span>
       </div>
       <div class="buttonRow">
         <button id="player4minus5" class="button red-button" onclick="player4Life-=5; firebase.database().ref('/players/3/').update({life : player4Life});">-5</button>
@@ -163,6 +163,8 @@
     </div>
 
   </div>
+
+  <center><a href="http://www.samhutchings.co">Designed and built by Sam Hutchings</a></center>
 
 </body>
 </html>
