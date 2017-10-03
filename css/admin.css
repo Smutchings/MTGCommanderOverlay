@@ -2,40 +2,41 @@
 
 body {
   width: 800px;
-  background-color: black;
-}
-
-h1 {
-  text-align: center;
-  font-family: 'Bree Serif', serif;
+  background-color: #333333;
 }
 
 h2 {
   font-family: 'Bree Serif', serif;
   font-size: 80px;
-  width: 75%;
-  float: left;
+  width: 100%;
+  color: #ffffff;
+  display: inline;
 }
 
 .lifeTotal {
-  position: relative;
   text-align: right;
   font-size: 60px;
   font-family: 'Overpass Mono', monospace;
-  width: 25%;
-  float: right;
+  color: #ffffff;
+  display: inline;
+}
+
+.buttonRow {
+  width: 100%;
+  margin-bottom: 40px;
 }
 
 .button {
   display: inline-block;
-  width: 19%;
+  width: 16%;
+  margin: auto;
   padding: 10px 10px;
   font-size: 50px;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
   outline: none;
-  color: #000;
+  color: #ffffff;
   background-color: #4CAF50;
   border: none;
   border-radius: 15px;
@@ -51,35 +52,52 @@ h2 {
 }
 
 .red-button {
-  background-color: #ff0000;
+  background-color: #D0021B;
 }
 
-.red-button:hover {background-color: #D0021B}
+.red-button:hover {background-color: #B30216}
 
 .yellow-button {
-  background-color: #D4C11E;
+  background-color: #F5A623;
 }
 
-.yellow-button:hover {background-color: #BAAA1A}
+.yellow-button:hover {background-color: #CC891D}
 
 .green-button {
-  background-color: #00B000;
+  background-color: #76C720;
 }
 
-.green-button:hover {background-color: #3e8e41}
+.green-button:hover {background-color: #6AB31D}
 
-#player1 {
-  color: red;
+#content {
+  width: 90%;
+  margin: auto;
 }
 
-#player2 {
-  color: green;
+#player1 .infoRow {
+  background-color: #D0021B;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
 }
 
-#player3 {
-  color: blue;
+#player2 .infoRow {
+  background-color: #76C720;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
 }
 
-#player4 {
-  color: yellow;
+#player3 .infoRow {
+  background-color: #4A90E2;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+#player4 .infoRow {
+  background-color: #F5A623;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
 }
