@@ -6,7 +6,7 @@ body {
 
 h2 {
   font-family: 'Bree Serif', serif;
-  font-size: 80px;
+  font-size: 40px;
   width: 100%;
   color: #ffffff;
   display: inline;
@@ -14,23 +14,26 @@ h2 {
 
 .lifeTotal {
   text-align: right;
-  font-size: 60px;
+  font-size: 40px;
   font-family: 'Overpass Mono', monospace;
   color: #ffffff;
   display: inline;
+  right: 20px;
+  background-color: black;
+  border-radius: 100%;
 }
 
 .buttonRow {
-  width: 100%;
-  margin-bottom: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .button {
   display: inline-block;
   width: 16%;
-  margin: auto;
   padding: 10px 10px;
-  font-size: 50px;
+  font-size: 30px;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
@@ -39,14 +42,12 @@ h2 {
   background-color: #4CAF50;
   border: none;
   border-radius: 15px;
-  box-shadow: 0 9px #999;
 }
 
 .button:hover {background-color: #3e8e41}
 
 .button:active {
   background-color: #3e8e41;
-  box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
 
@@ -77,26 +78,26 @@ h2 {
   background-color: #D0021B;
   padding: 10px;
   border-radius: 10px;
-  margin: 10px;
+  margin: 5px;
 }
 
 #player2 .infoRow {
   background-color: #76C720;
   padding: 10px;
   border-radius: 10px;
-  margin: 10px;
+  margin: 5px;
 }
 
 #player3 .infoRow {
   background-color: #4A90E2;
   padding: 10px;
   border-radius: 10px;
-  margin: 10px;
+  margin: 5px;
 }
 
 #player4 .infoRow {
   background-color: #F5A623;
   padding: 10px;
   border-radius: 10px;
-  margin: 10px;
+  margin: 5px;
 }
