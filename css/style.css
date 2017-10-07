@@ -124,7 +124,7 @@ p {
   left: 0px;
 }
 
-/*Microsoft Edge Rules*/
+/* Microsoft Edge Rules */
 @supports (-ms-ime-align: auto) {
   .life-left {
     position: relative;
