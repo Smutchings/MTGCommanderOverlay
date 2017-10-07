@@ -9,30 +9,42 @@ body {
 
 #top-left-nameplate {
   position: absolute;
+  width: 560px;
+  height: 145px;
   top: 10px;
   left: 0px;
   z-index: 2;
+  background-image: url("http://www.samhutchings.co/MTGCommanderOverlay/images/player1.png");
 }
 
 #top-right-nameplate {
   position: absolute;
+  width: 560px;
+  height: 145px;
   top: 10px;
   right: 0px;
   z-index: 2;
+  background-image: url("http://www.samhutchings.co/MTGCommanderOverlay/images/player2.png");
 }
 
 #bottom-left-nameplate {
   position: absolute;
+  width: 560px;
+  height: 145px;
   bottom: 10px;
   left: 0px;
   z-index: 2;
+  background-image: url("http://www.samhutchings.co/MTGCommanderOverlay/images/player3.png");
 }
 
 #bottom-right-nameplate {
   position: absolute;
+  width: 560px;
+  height: 145px;
   bottom: 10px;
   right: 0px;
   z-index: 2;
+  background-image: url("http://www.samhutchings.co/MTGCommanderOverlay/images/player4.png");
 }
 
 p {
@@ -60,10 +72,11 @@ p {
 }
 
 .life-left {
-  position: absolute;
+  position: relative;
   width: 180px;
-  top: 25px;
+  top: 5px;
   right: 20px;
+  float: right;
   text-align: center;
   font-family: 'Overpass Mono', monospace;
   font-size: 90px;
@@ -71,15 +84,16 @@ p {
 }
 
 .life-right {
-  position: absolute;
+  position: relative;
   width: 180px;
-  top: 25px;
+  top: 5px;
   left: 20px;
+  float: left;
   text-align: center;
   font-family: 'Overpass Mono', monospace;
   font-size: 90px;
   color: #ffffff;
-  z-index: 999;
+  z-index: 3;
 }
 
 .commander-left {
