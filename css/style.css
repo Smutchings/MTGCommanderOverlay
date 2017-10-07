@@ -123,3 +123,19 @@ p {
   bottom: 0px;
   left: 0px;
 }
+
+/*Microsoft Edge Rules*/
+@supports (-ms-ime-align: auto) {
+  .life-left {
+    position: relative;
+    width: 180px;
+    top: 20px;
+  }
+
+  .life-right {
+    position: relative;
+    width: 180px;
+    top: 20px;
+    left: 20px;
+  }
+}
