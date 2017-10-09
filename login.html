@@ -60,6 +60,9 @@
       // in their favor. In this case, the default country will be 'GB' even
       // though 'loginHint' specified the country code as '+1'.
       loginHint: '+441234567890'
+
+      provider: firebase.auth.EmailAuthProvider.PROVIDER_ID,
+      requireDisplayName: false
     }
   ]
 });
