@@ -74,7 +74,7 @@ p {
 .life-left {
   position: relative;
   width: 180px;
-  top: 5px;
+  top: 25px;
   right: 20px;
   float: right;
   text-align: center;
@@ -86,7 +86,7 @@ p {
 .life-right {
   position: relative;
   width: 180px;
-  top: 5px;
+  top: 25px;
   left: 20px;
   float: left;
   text-align: center;
